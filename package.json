@@ -1,0 +1,50 @@
+{
+  "name": "dotaccess",
+  "version": "0.0.1",
+  "description": "Точка Доступа",
+  "productName": ".доступа",
+  "author": "YZoZ <mail@yzoz.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.ts,.vue ./",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "quasar dev",
+    "build": "quasar build"
+  },
+  "dependencies": {
+    "@chenfengyuan/vue-countdown": "^2.1.1",
+    "@quasar/extras": "^1.0.0",
+    "@quasar/icongenie": "^3.1.0",
+    "pinia": "^2.0.11",
+    "quasar": "^2.6.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.0.0",
+    "vue3-telegram-login": "^0.0.4"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^1.0.0",
+    "@types/node": "^12.20.21",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.10.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "typescript": "^4.5.4",
+    "workbox-build": "^6.6.0",
+    "workbox-cacheable-response": "^6.6.0",
+    "workbox-core": "^6.6.0",
+    "workbox-expiration": "^6.6.0",
+    "workbox-precaching": "^6.6.0",
+    "workbox-routing": "^6.6.0",
+    "workbox-strategies": "^6.6.0"
+  },
+  "engines": {
+    "node": "^18 || ^16 || ^14.19",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
