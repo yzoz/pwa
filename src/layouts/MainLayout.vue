@@ -18,7 +18,7 @@
         <div>
           <q-btn round color="dark" to="/login" icon="login" />
           &nbsp;
-          <q-btn round color="dark" to="/send" icon="message" />
+          <q-btn round color="dark" to="/order" icon="message" />
         </div>
       </q-toolbar>
     </q-header>
@@ -75,3 +75,8 @@ function toggleLeftDrawer () {
   leftDrawerOpen.value = !leftDrawerOpen.value
 }
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Oswald&family=Roboto+Slab&display=swap');
+.q-toolbar__title{font-family: 'Roboto Slab', serif}
+</style>

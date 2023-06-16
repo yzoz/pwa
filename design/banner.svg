@@ -28,9 +28,9 @@
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="0.028284271"
-     inkscape:cx="13983.037"
-     inkscape:cy="5586.1436"
+     inkscape:zoom="0.02"
+     inkscape:cx="2925"
+     inkscape:cy="12150"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="0"
@@ -44,31 +44,35 @@
        orientation="-1,0"
        id="guide47045"
        inkscape:label=""
-       inkscape:locked="false"
+       inkscape:locked="true"
        inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
        position="1669.7664,1440"
        orientation="0,1"
        id="guide74572"
        inkscape:label=""
-       inkscape:locked="false"
+       inkscape:locked="true"
        inkscape:color="rgb(0,0,255)" />
     <sodipodi:guide
        position="154.34815,1696.6642"
        orientation="1,0"
-       id="guide74574" />
+       id="guide74574"
+       inkscape:locked="true" />
     <sodipodi:guide
        position="6155.2173,1542.3161"
        orientation="1,0"
-       id="guide74576" />
+       id="guide74576"
+       inkscape:locked="true" />
     <sodipodi:guide
        position="2488.2793,2720.9747"
        orientation="0,-1"
-       id="guide74578" />
+       id="guide74578"
+       inkscape:locked="true" />
     <sodipodi:guide
        position="2595.8553,157.85986"
        orientation="0,-1"
-       id="guide74580" />
+       id="guide74580"
+       inkscape:locked="true" />
   </sodipodi:namedview>
   <defs
      id="defs2">
@@ -85,7 +89,7 @@
      id="layer1">
     <g
        aria-label="доступа"
-       transform="matrix(17.821205,0,0,17.821205,-1745.7945,-5754.3046)"
+       transform="matrix(16.095028,0,0,15.329648,-980.75251,-4708.2806)"
        id="text4453"
        style="font-size:40px;line-height:1.25;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';white-space:pre;shape-inside:url(#rect4455);fill:#ff005f"
        inkscape:export-filename="/home/pin/Desktop/text4453.png"
@@ -116,52 +120,56 @@
          d="m 359.00391,412.34332 q -3.30079,0 -5.01954,-1.60156 -1.71875,-1.62109 -1.71875,-4.55078 0,-2.01172 1.09375,-3.4961 1.11329,-1.5039 3.20313,-2.32421 2.08984,-0.83985 5,-0.83985 h 3.76953 v -2.07031 q 0,-1.91406 -1.17187,-2.96875 -1.15235,-1.05469 -3.26172,-1.05469 -1.32813,0 -2.30469,0.33203 -0.97656,0.3125 -1.77734,0.87891 l -0.41016,2.94922 h -2.96875 v -4.84375 q 1.42578,-1.15235 3.32031,-1.73828 1.89453,-0.60547 4.19922,-0.60547 3.84766,0 6.03516,1.83594 2.1875,1.83593 2.1875,5.2539 v 10.17578 q 0,0.41016 0,0.80078 0.0195,0.39063 0.0586,0.78125 l 2.05078,0.21485 v 2.46094 h -5.52734 q -0.17578,-0.85938 -0.27344,-1.54297 -0.0977,-0.6836 -0.13672,-1.36719 -1.11328,1.42578 -2.79297,2.38281 -1.66015,0.9375 -3.55468,0.9375 z m 0.5664,-3.22265 q 1.91406,0 3.4961,-0.91797 1.58203,-0.91797 2.26562,-2.20703 v -3.82813 h -3.90625 q -2.65625,0 -3.98437,1.26953 -1.32813,1.26953 -1.32813,2.83203 0,1.38672 0.85938,2.12891 0.85937,0.72266 2.59765,0.72266 z"
          id="path13539" />
     </g>
-    <circle
-       style="fill:#ff005f;fill-opacity:1;stroke-width:9.61221"
+    <ellipse
+       style="fill:#ff005f;fill-opacity:1;stroke-width:8.47224"
        id="path17480"
-       cx="1766.0428"
-       cy="1629.0735"
-       r="94.560295"
+       cx="2190.9255"
+       cy="1642.8381"
        inkscape:export-filename="/home/pin/Desktop/text4453.png"
        inkscape:export-xdpi="137.52916"
-       inkscape:export-ydpi="137.52916" />
+       inkscape:export-ydpi="137.52916"
+       rx="85.401108"
+       ry="81.339958" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:712.846px;line-height:1.25;font-family:sans-serif;fill:#808080;fill-opacity:1;stroke:none;stroke-width:17.8211"
-       x="118.80774"
-       y="1588.8383"
+       style="font-style:normal;font-weight:normal;font-size:628.305px;line-height:1.25;font-family:sans-serif;fill:#808080;fill-opacity:1;stroke:none;stroke-width:15.7076"
+       x="121.41325"
+       y="1647.887"
        id="text5212"
        inkscape:export-filename="/home/pin/Desktop/text4453.png"
        inkscape:export-xdpi="265.43381"
-       inkscape:export-ydpi="265.43381"><tspan
+       inkscape:export-ydpi="265.43381"
+       transform="scale(1.02466,0.97593348)"><tspan
          sodipodi:role="line"
          id="tspan5210"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#808080;stroke-width:17.8211"
-         x="118.80774"
-         y="1588.8383">моя</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';fill:#808080;stroke-width:15.7076"
+         x="121.41325"
+         y="1647.887">точка</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:712.846px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:17.8211"
-       x="5226.7065"
-       y="1580.8535"
+       style="font-style:normal;font-weight:normal;font-size:628.305px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:15.7076"
+       x="5188.4395"
+       y="1640.8492"
        id="text9168"
        inkscape:export-filename="/home/pin/Desktop/text4453.png"
        inkscape:export-xdpi="265.43381"
-       inkscape:export-ydpi="265.43381"><tspan
+       inkscape:export-ydpi="265.43381"
+       transform="scale(1.02466,0.97593348)"><tspan
          sodipodi:role="line"
          id="tspan9166"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';stroke-width:17.8211"
-         x="5226.7065"
-         y="1580.8535">рф</tspan></text>
-    <circle
-       style="fill:#000000;fill-opacity:1;stroke-width:9.61221"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';stroke-width:15.7076"
+         x="5188.4395"
+         y="1640.8492">рф</tspan></text>
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:8.47224"
        id="path17480-6"
-       cx="5066.1118"
-       cy="1632.9666"
-       r="94.560295"
+       cx="5171.3472"
+       cy="1646.1869"
        inkscape:export-filename="/home/pin/Desktop/text4453.png"
        inkscape:export-xdpi="265.43381"
-       inkscape:export-ydpi="265.43381" />
+       inkscape:export-ydpi="265.43381"
+       rx="85.401108"
+       ry="81.339958" />
     <g
        id="g38561"
        transform="matrix(3.6990459,0,0,3.6990459,-667.17939,66.645404)"

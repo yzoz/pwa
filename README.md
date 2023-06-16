@@ -31,3 +31,8 @@ quasar build
 
 ### Customize the configuration
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+
+
+https://developer.android.com/studio/publish/app-signing
+EGkZ2sjwT3tP
+@!t4K12

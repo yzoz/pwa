@@ -2,7 +2,7 @@
   <q-page>
     <div class="count row text-center items-center justify-evenly">
       <vue-countdown :time="time" v-slot="{ days, hours, minutes, seconds }">
-        {{ days }}д • {{ hours }}ч • {{ minutes }}м • {{ seconds }}с
+        {{ days }}:{{ hours }}:{{ minutes }}:{{ seconds }}
       </vue-countdown>
     </div>
     <div class="row">
@@ -18,14 +18,14 @@
       </q-card>
     </div>
     <div class="row">
-      <q-card class="col service" @click="$router.push('/satellite')">
-        <q-img src="/icons/serv/satellite.png">
-          <div class="absolute-bottom text-subtitle2 text-center">Спутниковое</div>
+      <q-card class="col service" @click="$router.push('/light')">
+        <q-img src="/icons/serv/light.png">
+          <div class="absolute-bottom text-subtitle2 text-center">Освещение</div>
         </q-img>
       </q-card>
-      <q-card class="col service" @click="$router.push('/cashbox')">
-        <q-img src="/icons/serv/kass.png">
-          <div class="absolute-bottom text-subtitle2 text-center">Онлайн-кассы</div>
+      <q-card class="col service" @click="$router.push('/plug')">
+        <q-img src="/icons/serv/plug.png">
+          <div class="absolute-bottom text-subtitle2 text-center">Электрика</div>
         </q-img>
       </q-card>
     </div>
@@ -47,21 +47,21 @@
           <div class="absolute-bottom text-subtitle2 text-center">Домофоны</div>
         </q-img>
       </q-card>
-      <q-card class="col service" @click="$router.push('/light')">
-        <q-img src="/icons/serv/light.png">
-          <div class="absolute-bottom text-subtitle2 text-center">Освещение</div>
-        </q-img>
-      </q-card>
-    </div>
-    <div class="row">
       <q-card class="col service" @click="$router.push('/net')">
         <q-img src="/icons/serv/net.png">
           <div class="absolute-bottom text-subtitle2 text-center">Сети</div>
         </q-img>
       </q-card>
-      <q-card class="col service" @click="$router.push('/plug')">
-        <q-img src="/icons/serv/plug.png">
-          <div class="absolute-bottom text-subtitle2 text-center">Электрика</div>
+    </div>
+    <div class="row">
+      <q-card class="col service" @click="$router.push('/satellite')">
+        <q-img src="/icons/serv/satellite.png">
+          <div class="absolute-bottom text-subtitle2 text-center">Спутниковое</div>
+        </q-img>
+      </q-card>
+      <q-card class="col service" @click="$router.push('/cashbox')">
+        <q-img src="/icons/serv/kass.png">
+          <div class="absolute-bottom text-subtitle2 text-center">Онлайн-кассы</div>
         </q-img>
       </q-card>
     </div>
@@ -77,8 +77,8 @@ const time = count - now
 
 <style>
 .service {margin: 10px;}
-.logo {width: 90%}
-.count {font-size: 35px}
+.count {font-size: 50px; font-family: 'Orbitron', sans-serif;}
+.count span{width: 100%; text-align: center; color: #808080;}
 .q-img__container {
   left: 20%;
   top: 10%;
@@ -87,6 +87,9 @@ const time = count - now
 }
 .q-img__content > div {
   padding: 5px;
-  background: #ff005f
+  font-size: 15px;
+  text-transform: uppercase;
+  background: #ff005f;
+  font-family: Oswald, sans-serif;
 }
 </style>

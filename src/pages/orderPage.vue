@@ -20,14 +20,19 @@
         <q-icon name="phone" />
       </template>
     </q-input>
+    <q-select v-model="serv" :options="services" label="Услуга">
+      <template v-slot:prepend>
+        <q-icon name="category" />
+      </template>
+    </q-select>
     <q-input v-model="addr" label="Адрес">
       <template v-slot:prepend>
         <q-icon name="place" />
       </template>
     </q-input>
-    <q-input v-model="msg" label="Вопрос" type="textarea">
+    <q-input v-model="msg" label="Комментарий" type="textarea">
       <template v-slot:prepend>
-        <q-icon name="question_mark" />
+        <q-icon name="message" />
       </template>
     </q-input>
     <p></p>
@@ -37,11 +42,19 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useRoute } from 'vue-router'
+const route = useRoute()
 const wtf = ref(false)
 const name = ref('')
 const phone = ref('')
+const serv = ref('')
 const addr = ref('')
 const msg = ref('')
+const services = ['Видеонаблюдение', 'Интернет', 'Электрика', 'Освещение', 'Сигнализация', 'Автоматические ворота', 'Домофоны', 'Локальная сеть', 'Онлайн-касса', 'Спутниковое ТВ']
+
+if (route.params.id) {
+  serv.value = route.params.id
+}
 
 const tg = {
   token: '6189234366:AAEWuUXga_UYAOzxvZzX_8J8sepAYwbFzYI',
@@ -56,7 +69,7 @@ function sendMessage (text) {
 }
 
 const send = () => {
-  sendMessage(name.value + ' | ' + phone.value + ' | ' + addr.value + ' | ' + msg.value)
+  sendMessage(name.value + ' | ' + phone.value + ' | ' + serv.value + ' | ' + addr.value + ' | ' + msg.value)
   name.value = ''
   phone.value = ''
   addr.value = ''
