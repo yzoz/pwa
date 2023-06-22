@@ -5,6 +5,7 @@
   "npmClient": "npm",
   "webDir": "www",
   "server": {
-    "androidScheme": "https"
+    "androidScheme": "https",
+    "url": "https://192.168.1.34:9500"
   }
 }

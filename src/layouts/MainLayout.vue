@@ -16,7 +16,10 @@
         </q-toolbar-title>
 
         <div>
-          <q-btn round color="dark" to="/login" icon="login" />
+          <q-btn v-if="iPWA" round color="dark" @click="install()" icon="install_mobile" />
+          <q-btn v-if="!iPWA && isMobile && !isNative" round color="dark" to="/install" icon="install_mobile" />
+          &nbsp;
+          <q-btn v-if="isWeb" round color="dark" to="/login" icon="login" />
           &nbsp;
           <q-btn round color="dark" to="/order" icon="message" />
         </div>
@@ -67,7 +70,61 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import { Capacitor } from '@capacitor/core'
+
+const isMobile = ref(false)
+
+const getMobileOS = () => {
+  const ua = navigator.userAgent
+  if (/android/i.test(ua)) {
+    return 'Android'
+  } else if (/iPad|iPhone|iPod/.test(ua)) {
+    return 'iOS'
+  }
+  return 'Other'
+}
+
+onMounted(() => {
+  console.log(getMobileOS())
+  const os = getMobileOS()
+  if (os === 'Android' || os === 'iOS') {
+    isMobile.value = true
+  }
+})
+
+const deferredPrompt = ref(null)
+const isWeb = ref(false)
+const iPWA = ref(false)
+const isNative = Capacitor.isNativePlatform()
+const isInstalled = ref(false)
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault()
+  deferredPrompt.value = e
+  iPWA.value = true
+  console.log('beforeinstallprompt event was fired')
+})
+
+window.addEventListener('appinstalled', () => {
+  isInstalled.value = true
+  deferredPrompt.value = null
+  console.log('PWA was installed')
+})
+
+const install = async () => {
+  deferredPrompt.value.prompt()
+  const { outcome } = await deferredPrompt.value.userChoice
+  console.log(`User response to the install prompt: ${outcome}`)
+  deferredPrompt.value = null
+}
+
+// Capacitor.getPlatform(); // -> 'web', 'ios' or 'android'
+if (Capacitor.getPlatform() === 'web') {
+  isWeb.value = true
+}
+
+// const pl = Capacitor.getPlatform()
 
 const leftDrawerOpen = ref(false)
 
