@@ -32,14 +32,17 @@ quasar build
 ### Customize the configuration
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
 
+https://zoom.cnews.ru/publication/item/64607
+
 
 https://developer.android.com/studio/publish/app-signing
-EGkZ2sjwT3tP
-@!t4K12
 
 https://capacitorjs.com/docs/apis/splash-screen
+
 https://capacitorjs.com/docs/guides/splash-screens-and-icons
+
 https://capacitorjs.com/docs/vscode/getting-started
+
 
 https://global.developer.mi.com/register/profile?devType=individual&from=result
 
@@ -47,6 +50,7 @@ https://web.dev/i18n/ru/customize-install/
 
 https://dev.to/konyu/using-javascript-to-determine-whether-the-client-is-ios-or-android-4i1j
 
+```js
 export const checkIphone = () => {
   const u = navigator.userAgent
   return !!u.match(/iPhone/i)
@@ -69,3 +73,4 @@ export default {
   checkIpad,
   checkMobile,
 }
+```

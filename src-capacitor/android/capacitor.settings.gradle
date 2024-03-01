@@ -4,6 +4,3 @@ project(':capacitor-android').projectDir = new File('../node_modules/@capacitor/
 
 include ':capacitor-app'
 project(':capacitor-app').projectDir = new File('../node_modules/@capacitor/app/android')
-
-include ':jcesarmobile-ssl-skip'
-project(':jcesarmobile-ssl-skip').projectDir = new File('../node_modules/@jcesarmobile/ssl-skip/android')

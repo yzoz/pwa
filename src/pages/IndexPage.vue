@@ -1,10 +1,10 @@
 <template>
   <q-page>
-    <div class="count row text-center items-center justify-evenly">
+    <!--div class="count row text-center items-center justify-evenly">
       <vue-countdown :time="time" v-slot="{ days, hours, minutes, seconds }">
         {{ days }}:{{ hours }}:{{ minutes }}:{{ seconds }}
       </vue-countdown>
-    </div>
+    </div-->
     <div class="row">
       <q-card class="col service" @click="$router.push('/cctv')">
         <q-img src="/icons/serv/cctv.png">

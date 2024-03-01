@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "org.capacitor.quasar.app",
+  "applicationId": "dot.access.quasar.app",
   "variantName": "release",
   "elements": [
     {
