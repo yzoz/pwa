@@ -1,5 +1,5 @@
 <template>
-  <q-page>
+  <q-page class="home">
     <!--div class="count row text-center items-center justify-evenly">
       <vue-countdown :time="time" v-slot="{ days, hours, minutes, seconds }">
         {{ days }}:{{ hours }}:{{ minutes }}:{{ seconds }}
@@ -91,5 +91,20 @@ const time = count - now
   text-transform: uppercase;
   background: #ff005f;
   font-family: Oswald, sans-serif;
+}
+
+/* Десктоп: раскладываем плитки услуг в адаптивную сетку, чтобы они занимали
+   ширину по максимуму (не по 2 огромных квадрата в ряд).
+   На экранах < 1024px вёрстка остаётся прежней. */
+@media (min-width: 1024px) {
+  .home {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    padding: 10px;
+    align-content: start;
+  }
+  .home .row { display: contents; }
+  .home .service { margin: 0; min-width: 0; }
 }
 </style>
