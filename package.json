@@ -12,6 +12,7 @@
     "build": "quasar build"
   },
   "dependencies": {
+    "@capacitor/core": "^5.0.5",
     "@chenfengyuan/vue-countdown": "^2.1.1",
     "@quasar/extras": "^1.0.0",
     "@quasar/icongenie": "^3.1.0",
