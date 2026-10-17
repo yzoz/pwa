@@ -95,11 +95,13 @@ const time = count - now
 
 /* Десктоп: раскладываем плитки услуг в адаптивную сетку, чтобы они занимали
    ширину по максимуму (не по 2 огромных квадрата в ряд).
+   minmax(260px) подобран так, чтобы на больших экранах (1920) выходило
+   ровно 5 плиток в ряд (5+5), а сами плитки были крупнее.
    На экранах < 1024px вёрстка остаётся прежней. */
 @media (min-width: 1024px) {
   .home {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 16px;
     padding: 10px;
     align-content: start;
